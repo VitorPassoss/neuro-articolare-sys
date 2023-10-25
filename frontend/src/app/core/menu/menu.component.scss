@@ -1,0 +1,116 @@
+.sidenav {
+    height: 100vh;
+    width: 210px;
+    z-index: 1;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #222D32;
+    color: #ffffff;
+}
+
+::ng-deep .p-menu {
+    background-color: #222D32;
+    color: #ffffff;
+    border: none;
+}
+
+::ng-deep .p-menu .p-submenu-header {
+    background-color: #1A2226 !important;
+    color: #ffffff;
+    font-size: 5px !important;
+}
+
+::ng-deep .p-menu .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+    color: #ffffff;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav-item {
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+}
+.sidenav-item a{
+    color: #ffffff;
+}
+
+.sidenav-item:hover {
+    color: var(---color-primary);
+    background: rgba(21, 88, 255, 0.05);
+    cursor: pointer;
+}
+
+.sidenav-item:hover a {
+    color: var(---color-primary);
+}
+.sidenav-item:hover img {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.sidenav-item.active {
+    background: rgba(21, 88, 255, 0.05);
+}
+.sidenav-item.active a {
+    color: var(---color-primary);
+}
+
+.sidenav-item.active .sidenav-icon{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.sidenav-item img {
+    margin-right: 8px;
+}
+
+.sidenav-icon.active{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+
+.img-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h1 {
+        color: #ffffff;
+        font-size: 25px;
+        text-align: center;
+        font-weight: 700;
+        font-family:Arial, Helvetica, sans-serif;
+        padding-bottom: 6px;
+        border-bottom: 1px solid gray;
+    }
+
+    img {
+        position: absolute;
+        bottom: 50px;
+        width: 140px;
+        height: 140px;
+        opacity: 0.3;
+    }
+}
+
+
+.menu{
+    padding: 5% !important;
+    margin: 5%;
+}

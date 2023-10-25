@@ -1,0 +1,27 @@
+<div class="container">
+    <form (ngSubmit)="submitForm()" [formGroup]="loginForm">
+        <div class="grid col-12 text-center">
+            <div class="struct-logo">
+                <div>
+                    
+                    <div id="cardLogin" class="col-10 col-offset-1 md:col-offset-4 md:col-4">
+                        <div class="grid text-center">
+                            <label id="lbLogin">Login</label>
+                
+                            <input name="email" formControlName="email" id="inputEmail" type="email" autocomplete="off" pInputText placeholder="E-mail" />
+                            <p-password name="senha" formControlName="password" [feedback]="false"  #psw  id="inputPassword" placeholder="Senha" 
+                                
+                                 >
+                            </p-password>
+                            <p-button  type="submit" id="btnSubmit" class="btn-style" label="Entrar" ></p-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+    
+</div>
+
+<app-block-loading></app-block-loading>
+<p-toast position="top-center" key="tc"></p-toast>

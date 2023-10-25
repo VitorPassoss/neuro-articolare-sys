@@ -1,0 +1,142 @@
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url('../../../assets/cropped-Logo_Neuroarticolare-1-1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cardLogin {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    height: 260px;
+    margin-top: 14%;
+    z-index: 1;
+    padding-inline: 30px;
+}
+
+#lbTaurus {
+    position: absolute;
+    left: 26.92%;
+    right: 27.18%;
+    top: 18.73%;
+    bottom: 72.99%;
+    color: #3A55FC;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 53px;
+
+}
+
+#lbOne {
+    position: absolute;
+    left: 43.85%;
+    right: 44.1%;
+    top: 28.01%;
+    bottom: 70.14%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3A55FC;
+}
+
+#lbLogin {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 16px;
+    width: 100%;
+    color: #3A55FC;
+    margin-top: 19px;
+}
+
+#inputEmail,
+#btnSubmit,
+#inputPassword {
+    font-style: normal;
+    margin-top: 19px;
+    font-size: 1rem;
+    width: 100%;
+    
+    ::ng-deep button {
+        font-size: 1rem;
+    }
+}
+
+.btn-style {
+    width: 100%;
+}
+
+#inputPassword {
+    ::ng-deep div {
+        width: 100%;
+
+        ::ng-deep input {
+            font-style: normal;
+            font-size: 1rem;
+            width: 100%;
+        }
+    }
+    
+}
+
+#lbEsqueciSenha {
+    padding-top: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    width: 100%;
+    color: #3A55FC;
+}
+
+
+.logo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100px;
+        height: 130px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    img {
+        width: 116%;
+        margin-left: -8%;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    img {
+        margin-left: -9vw;
+        padding-top: 5vh;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    img {
+        margin-left: -9vw;
+        padding-top: 5vh;
+    }
+}

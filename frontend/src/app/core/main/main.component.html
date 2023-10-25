@@ -1,0 +1,83 @@
+<div class="header-custom">
+    <div>
+        <i class="pi pi-bars" ></i>
+    </div>
+    <div >
+        <span class="p-input-icon-left ml-auto">
+            <i class="pi pi-search"></i>
+            <input class="search" pInputText type="text" placeholder="Pesquisar paciente" />
+        </span>
+    </div>
+    <div>
+        
+    </div>
+</div>
+
+<div class="struct-system">
+    <div class="menu">
+        <div class="grid actions">
+            <div class="col-6">
+                <button type="submit" class="system-button">
+                    <i class="pi pi-plus" ></i>
+                    Avaliação
+                </button>
+            </div>
+            <div class="col-6">
+                <button type="submit" class="system-button">
+                    <i class="pi pi-plus" ></i>
+                    Evolução
+                </button>
+
+            </div>
+            
+        </div>
+
+        <div class="title-tab">
+            <p>NAVEGAÇÃO PRINCIPAL</p>
+        </div>
+
+        <button class="option" >
+            <i class="pi pi-calendar"></i>
+            Agenda
+        </button>
+
+        <button class="option">
+            <i class="pi pi-users"></i>
+            Pacientes
+        </button>
+
+        <button class="option">
+            <img src="../../../assets/Stethoscope.svg" alt="">
+            Atendimentos
+        </button>
+        <button class="option">
+            <img src="../../../assets/Doctors Bag.svg" alt="">
+            Procedimentos
+        </button>
+
+
+        <div class="title-tab">
+            <p>CONFIGURAÇÃO</p>
+        </div>
+
+  
+
+        <p-panelMenu class="option" [model]="items" [style]="{'width':'300px'}">
+            <i class="pi pi-users"></i>
+            Equipe
+        </p-panelMenu>
+
+
+      
+    </div>
+    
+    <div id="custom-main" class="sidemenu-margin">
+        <div style="padding: 20px;">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+<p-toast position="top-center" key="tc"></p-toast>
+<app-block-loading></app-block-loading>
+
