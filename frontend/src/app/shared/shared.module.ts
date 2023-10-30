@@ -26,6 +26,10 @@ import { SplitterModule } from 'primeng/splitter';
 import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
 import { MenuModule } from 'primeng/menu';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarModule } from 'primeng/calendar';
+import { CheckboxModule } from 'primeng/checkbox';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   declarations: [],
@@ -50,7 +54,11 @@ import { MenuModule } from 'primeng/menu';
     SplitterModule,
     CardModule,
     ChipModule,
-    MenuModule
+    MenuModule,
+    FullCalendarModule,
+    CalendarModule,
+    CheckboxModule,
+    DividerModule
   ],
   exports:[
     TabViewModule,
@@ -72,7 +80,11 @@ import { MenuModule } from 'primeng/menu';
     SplitterModule,
     CardModule,
     ChipModule,
-    MenuModule
+    MenuModule,
+    FullCalendarModule,
+    CalendarModule,
+    CheckboxModule,
+    DividerModule
   ],
   providers: [MessageService]
 

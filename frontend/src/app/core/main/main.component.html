@@ -1,6 +1,6 @@
 <div class="header-custom">
     <div>
-        <i class="pi pi-bars" ></i>
+        <i class="pi pi-bars" (click)="handleMenu()"></i>
     </div>
     <div >
         <span class="p-input-icon-left ml-auto">
@@ -14,7 +14,7 @@
 </div>
 
 <div class="struct-system">
-    <div class="menu">
+    <div class="menu" [class.menu-closed]="!isOpen">
         <div class="grid actions">
             <div class="col-6">
                 <button type="submit" class="system-button">
@@ -33,38 +33,38 @@
         </div>
 
         <div class="title-tab">
-            <p>NAVEGAÇÃO PRINCIPAL</p>
+            <p class="title">NAVEGAÇÃO PRINCIPAL</p>
         </div>
 
-        <button class="option" >
+        <button class="option" (click)="navigateTo('agenda')">
             <i class="pi pi-calendar"></i>
-            Agenda
+            <p>Agenda</p>
         </button>
 
         <button class="option">
             <i class="pi pi-users"></i>
-            Pacientes
+            <p>Pacientes</p>
         </button>
 
         <button class="option">
             <img src="../../../assets/Stethoscope.svg" alt="">
-            Atendimentos
+            <p>Atendimentos</p>
         </button>
         <button class="option">
             <img src="../../../assets/Doctors Bag.svg" alt="">
-            Procedimentos
+            <p>Procedimentos</p>
         </button>
 
 
         <div class="title-tab">
-            <p>CONFIGURAÇÃO</p>
+            <p class="title">CONFIGURAÇÃO</p>
         </div>
 
   
 
-        <p-panelMenu class="option" [model]="items" [style]="{'width':'300px'}">
+        <p-panelMenu *ngIf="isOpen" class="option" [model]="items" [style]="{'width':'300px'}">
             <i class="pi pi-users"></i>
-            Equipe
+            <p>Equipe</p>
         </p-panelMenu>
 
 

@@ -13,12 +13,18 @@ import { ChartModule } from 'primeng/chart';
 import { BlockLoadingComponent } from './shared/block-loading/block-loading.component';
 import { ToastModule } from 'primeng/toast';
 import { EquipeComponent } from './pages/equipe/equipe.component';
+import { AgendaComponent } from './pages/agenda/agenda.component';
+import { PacientesComponent } from './pages/pacientes/pacientes.component';
+import { AtendimentoComponent } from './pages/atendimento/atendimento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EquipeComponent,
+    AgendaComponent,
+    PacientesComponent,
+    AtendimentoComponent,
   ],
   imports: [
     BrowserModule,

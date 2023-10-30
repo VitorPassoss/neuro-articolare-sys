@@ -1,0 +1,168 @@
+
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ccc;
+  text-align: left;
+  height: 100%;
+}
+
+.row-card {
+  display: flex;
+  height: 100%;
+}
+
+.evento {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.evento-item {
+  position: relative;
+  background-color: #477eb8;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #fff;
+  left: 4px ;
+  p {
+    font-size: 9px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+
+.input-struct {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-default {
+  padding: 0.3rem;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 4px;
+}
+
+.date-input {
+  width: 90%;
+}
+
+.hour-inp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+}
+
+::ng-deep .hour-inp .p-inputtext {
+  padding: 0.36rem 0.36rem;
+  border-radius: 0px;
+}
+
+.card {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 0.25rem 0.25rem;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .hour--left {
+    margin-right: 20px;
+  }
+
+  .checkdiv {
+    margin-top: 30px;
+
+    .p-checkbox {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+::ng-deep {
+  .p-dropdown {
+    width: 100%;
+  }
+  
+  .p-inputtext {
+    padding: 0.34rem 0.34rem;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 16px !important;
+  }
+  
+  
+  .fc.fc-theme-standard .fc-toolbar .fc-button  {
+    background-color: #fff;
+    color: #495057;
+    border: 1px solid #ced4da;
+  }
+  
+  .fc.fc-theme-standard .fc-toolbar .fc-button:enabled:active {
+    background: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+  }
+  
+  
+  .fc.fc-theme-standard .fc-toolbar .fc-button:enabled:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+  }
+  
+  
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-timeGridWeek-button.fc-button-active:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+  }
+  
+
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-timeGridDay-button.fc-button-active:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+  }
+  
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-dayGridMonth-button.fc-button-active:hover {
+    background: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+  }
+
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-dayGridMonth-button.fc-button-active,
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-timeGridWeek-button.fc-button-active,
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-timeGridDay-button.fc-button-active,
+  .fc.fc-theme-standard .fc-toolbar .fc-button.fc-listWeek-button.fc-button-active {
+    background: #e9ecef;
+    border-color: #ced4da;
+    color: #495057;
+  }
+
+  
+  
+}
+
+::ng-deep .p-dialog .p-dialog-header {
+  padding: 1.2rem;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.form-style {
+  margin-top: px;
+}

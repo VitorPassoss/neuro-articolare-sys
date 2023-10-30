@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit{
 
-  items:any = []
 
+  items:any = []
+  isOpen:boolean = true
+
+  constructor(
+    private router: Router,
+  ) {}
   ngOnInit(): void {
       this.items = [
         {
@@ -28,4 +34,14 @@ export class MainComponent implements OnInit{
       ]
 
   }
+
+  navigateTo(locate:string){
+    this.router.navigate([`/${locate}`])
+  }
+
+  handleMenu() {
+    this.isOpen = !this.isOpen;
+    
+  }
+
 }

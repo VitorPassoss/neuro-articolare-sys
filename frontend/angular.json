@@ -32,6 +32,7 @@
             "styles": [
               "src/styles.scss",
               "node_modules/primeflex/primeflex.css"
+              
             ],
             "scripts": [
               "node_modules/chart.js/dist/chart.js"

@@ -41,7 +41,27 @@
     height: 100vh;
     background-color: #1e282c;
     color: #fff;
-    z-index: 9999;
+    transition: 0.5s;
+
+
+    &.menu-closed {
+        width: 50px; 
+
+        .actions {
+            display: none;
+        }
+
+        p {
+            display: none;
+        }
+
+        .option {
+            padding: 10px 20px 10px 20px;
+        }
+
+      
+    }
+
     .actions {
         padding: 18px 18px 0px 18px;
     }
@@ -73,7 +93,7 @@
         width: 100%;
         margin: 0px;
 
-        p {
+        .title {
             text-align: start;
             color: #677377;
             font-size: 13px;
@@ -91,9 +111,13 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 10px 20px 10px 20px;
-        font-size: 14px;
-        cursor: pointer;
+        padding: 0px 20px 0px 20px;
+
+
+        p {
+            font-size: 14px;
+            cursor: pointer;
+        }
     
 
         i {
